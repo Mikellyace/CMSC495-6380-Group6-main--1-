@@ -1,0 +1,165 @@
+
+:root{
+   --peru:#cd9452;
+   --black:#222;
+   --white:#fff;
+   --light-black:#666;
+   --light-white:#ccc;
+   --light-bg:#f5f5f5;
+   --dark-bg:rgba(0,0,0,.7);
+   --border:.1rem solid #aaa;
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+   font-family: 'Dosis', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: all 0.4s cubic-bezier(.43,1.1,.62,1.08);
+   text-transform: capitalize;
+}
+
+
+.order{
+   background: var(--peru);
+}
+
+.order .heading span{
+   color:var(--white);
+}
+
+.order .heading h3{
+   color:var(--white);
+}
+
+.order form{
+   padding:2rem;
+   background: var(--white);
+   box-shadow: var(--box-shadow);
+}
+
+.order form .box-container{
+   display: flex;
+   flex-wrap: wrap;
+   gap:2rem;
+}
+
+.order form .box-container .box{
+   flex:1 1 41rem;
+}
+
+.order form .box-container .box .inputBox input,
+.order form .box-container .box .inputBox textarea{
+   width: 100%;
+   margin:1rem 0;
+   padding:1.2rem 1.4rem;
+   font-size: 1.7rem;
+   color:var(--light-black);
+   border:var(--border);
+   text-transform: none;
+}
+
+.order form .box-container .box .inputBox input::placeholder,
+.order form .box-container .box .inputBox textarea::placeholder{
+   text-transform: capitalize;
+}
+
+.order form .box-container .box .inputBox input:focus,
+.order form .box-container .box .inputBox textarea:focus{
+   background: var(--black);
+   color:var(--white);
+}
+
+.order form .box-container .box .inputBox input:focus::placeholder,
+.order form .box-container .box .inputBox textarea:focus::placeholder{
+   color:var(--light-white);
+}
+
+.order form .box-container .box .inputBox textarea{
+   height: 20rem;
+   resize: none;
+}
+
+.order form .box-container .box .inputBox .map{
+   height: 20rem;
+   width: 100%;
+   margin:1rem 0;
+}
+
+.order form .box-container .box .inputBox span{
+   color:var(--light-black);
+   font-size: 2rem;
+}
+
+.footer{
+    text-align: center;
+    /* padding-bottom: 10rem; */
+ }
+ 
+ .footer .icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:2rem;
+ }
+ 
+ .footer .icons-container .icons{
+    text-align: center;
+    padding:3rem 2rem;
+ }
+ 
+ .footer .icons-container .icons i{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background: var(--peru);
+    color:var(--white);
+    margin-bottom: .5rem;
+    line-height: 5.8rem;
+    font-size: 2rem;
+ }
+ 
+ .footer .icons-container .icons h3{
+    font-size: 2rem;
+    color:var(--black);
+    padding:1rem 0;
+ }
+ 
+ .footer .icons-container .icons p{
+    line-height: 1.5;
+    font-size: 1.7rem;
+    color:var(--light-black);
+    text-transform: none;
+ }
+ 
+ .footer .share{
+    margin:2rem 0;
+ }
+ 
+ .footer .share a{
+    height: 6rem;
+    width: 6rem;
+    line-height: 5.8rem;
+    color:var(--white);
+    background: var(--black);
+    margin:0 .3rem;
+    font-size: 2.5rem;
+ }  
+ 
+ .footer .share a:hover{
+    background: var(--peru);
+ }
+ 
+ .footer .credit{
+    padding-top: 2.5rem;
+    margin-top: 3rem;
+    border-top: var(--border);
+    font-size: 2rem;
+    color:var(--light-black);
+ }
+ 
+ .footer .credit span{
+    color:var(--peru);
+ }
+ 
